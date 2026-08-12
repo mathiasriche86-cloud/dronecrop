@@ -1,0 +1,421 @@
+.sobre-nosotros {
+  position: relative;
+  padding: 125px 0;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 88% 12%,
+      rgba(130, 182, 54, 0.12),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 8% 90%,
+      rgba(30, 100, 138, 0.12),
+      transparent 28%
+    ),
+    #f7f8f5;
+}
+
+.sobre-nosotros-container {
+  width: min(1380px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+.sobre-nosotros-heading {
+  margin-bottom: 58px;
+}
+
+.sobre-nosotros-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-bottom: 20px;
+
+  color: #719f2f;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.sobre-nosotros-eyebrow > span {
+  width: 48px;
+  height: 3px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(90deg, #d5ad48, #84b638);
+}
+
+.sobre-nosotros-heading h2 {
+  margin: 0;
+
+  color: #09263d;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(46px, 5vw, 72px);
+  font-weight: 800;
+  line-height: 0.97;
+  letter-spacing: -0.055em;
+  text-transform: uppercase;
+}
+
+.sobre-nosotros-heading h2 strong {
+  display: block;
+  margin-top: 10px;
+
+  color: #79a932;
+  font-weight: 800;
+}
+
+.sobre-nosotros-story {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.sobre-nosotros-photo {
+  position: relative;
+  overflow: hidden;
+
+  border: 1px solid rgba(15, 55, 78, 0.1);
+  border-radius: 30px;
+
+  box-shadow:
+    0 35px 90px rgba(10, 43, 64, 0.2),
+    0 0 55px rgba(125, 178, 53, 0.08);
+}
+
+.sobre-nosotros-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent 55%,
+      rgba(3, 17, 28, 0.75) 100%
+    );
+
+  pointer-events: none;
+}
+
+.sobre-nosotros-photo img {
+  width: 100%;
+  height: 660px;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.6s ease;
+}
+
+.sobre-nosotros-photo:hover img {
+  transform: scale(1.035);
+}
+
+.sobre-nosotros-photo-label {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  padding: 16px 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 17px;
+
+  background: rgba(4, 24, 39, 0.74);
+
+  backdrop-filter: blur(14px);
+}
+
+.sobre-nosotros-photo-label strong {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.sobre-nosotros-photo-label span {
+  color: #9dcb48;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sobre-nosotros-content {
+  min-width: 0;
+}
+
+.sobre-nosotros-small-title {
+  display: block;
+  margin-bottom: 14px;
+
+  color: #79a932;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sobre-nosotros-content > h3,
+.como-trabajamos-heading h3 {
+  margin: 0;
+
+  color: #0a2b44;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(32px, 3vw, 48px);
+  font-weight: 750;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.sobre-nosotros-content > p {
+  margin: 24px 0 0;
+
+  color: #5e6f7c;
+
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.sobre-nosotros-values {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+
+  margin-top: 32px;
+}
+
+.sobre-nosotros-value {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  padding: 18px;
+
+  border: 1px solid rgba(15, 55, 78, 0.09);
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.8);
+
+  box-shadow: 0 16px 36px rgba(11, 47, 69, 0.06);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.sobre-nosotros-value:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(121, 169, 50, 0.28);
+}
+
+.sobre-nosotros-value-icon {
+  width: 44px;
+  height: 44px;
+
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+
+  border-radius: 14px;
+
+  background: rgba(139, 190, 59, 0.13);
+
+  color: #719f2d;
+
+  font-size: 19px;
+}
+
+.sobre-nosotros-value h4 {
+  margin: 0 0 6px;
+
+  color: #153e58;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.sobre-nosotros-value p {
+  margin: 0;
+
+  color: #667783;
+
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.como-trabajamos {
+  margin-top: 125px;
+  padding-top: 85px;
+
+  border-top: 1px solid rgba(12, 49, 72, 0.1);
+}
+
+.como-trabajamos-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 50px;
+
+  margin-bottom: 48px;
+}
+
+.como-trabajamos-heading > p {
+  max-width: 470px;
+  margin: 0 0 4px;
+
+  color: #61717e;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.como-trabajamos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.como-trabajamos-card {
+  min-height: 310px;
+
+  padding: 27px;
+
+  border: 1px solid rgba(14, 56, 81, 0.1);
+  border-radius: 23px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.98),
+      rgba(238, 243, 239, 0.96)
+    );
+
+  box-shadow: 0 20px 50px rgba(12, 43, 62, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.como-trabajamos-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(121, 169, 50, 0.28);
+}
+
+.como-trabajamos-number {
+  display: block;
+  margin-bottom: 18px;
+
+  color: rgba(7, 35, 55, 0.16);
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.como-trabajamos-icon {
+  width: 57px;
+  height: 57px;
+
+  display: grid;
+  place-items: center;
+
+  margin-bottom: 24px;
+
+  border: 1px solid rgba(137, 188, 58, 0.24);
+  border-radius: 18px;
+
+  background: rgba(137, 188, 58, 0.13);
+
+  color: #719f2d;
+
+  font-size: 23px;
+}
+
+.como-trabajamos-card h4 {
+  margin: 0 0 13px;
+
+  color: #0a2b44;
+
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.como-trabajamos-card p {
+  margin: 0;
+
+  color: #657580;
+
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+@media (max-width: 1100px) {
+  .sobre-nosotros-story {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .sobre-nosotros-photo img {
+    height: 610px;
+  }
+
+  .como-trabajamos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 740px) {
+  .sobre-nosotros {
+    padding: 95px 0;
+  }
+
+  .sobre-nosotros-container {
+    width: min(100% - 36px, 650px);
+  }
+
+  .sobre-nosotros-photo img {
+    height: 470px;
+  }
+
+  .sobre-nosotros-values {
+    grid-template-columns: 1fr;
+  }
+
+  .como-trabajamos {
+    margin-top: 90px;
+    padding-top: 65px;
+  }
+
+  .como-trabajamos-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  .como-trabajamos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .como-trabajamos-card {
+    min-height: auto;
+  }
+}
